@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lecture 11: LocalStorage and JSON</title>
+  <style>
+    body { font-family: sans-serif; margin: 20px; }
+    #noteInput { padding: 4px; width: 260px; }
+    #addNoteBtn { margin-left: 4px; }
+    ul { margin-top: 12px; padding-left: 20px; }
+    li { margin-bottom: 4px; }
+    button.delete-btn { margin-left: 8px; }
+  </style>
+</head>
+<body>
+  <h1>Lecture 11: LocalStorage and JSON</h1>
+  <p>This lecture shows how to save and load data in the browser using <code>localStorage</code> and JSON.</p>
+
+  <h2>Mini Project: Persistent Notes</h2>
+  <input id="noteInput" type="text" placeholder="Write a note...">
+  <button id="addNoteBtn">Add Note</button>
+
+  <ul id="notesList"></ul>
+
+  <button id="clearAllBtn">Clear All Notes</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

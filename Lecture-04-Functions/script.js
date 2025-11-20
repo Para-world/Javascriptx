@@ -105,6 +105,12 @@ function outer() {
 
 outer();
 
+// --- Advanced Notes (for professionals) ---
+// - Function declarations are hoisted, while function expressions and arrow functions are not.
+// - Prefer pure functions (no side effects) when possible; they are easier to test and reuse.
+// - Arrow functions capture this lexically and are usually not suitable as methods on objects that rely on this.
 
-
-
+// --- Exercises ---
+// 1. Convert some of the existing examples to pure functions that return values instead of logging directly.
+// 2. Implement a compose(f, g) helper that returns a new function x => f(g(x)) and use it with simple math functions.
+// 3. Write a function makeLogger(prefix) that returns a function logging with that prefix, using closures.

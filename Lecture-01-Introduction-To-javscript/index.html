@@ -3,11 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Lecture 01: Introduction to JavaScript</title>
   </head>
   <body>
-    <h1 id="title">Hello</h1>
-    <button onclick="changeText()">Click Me</button>
+    <h1 id="title">Welcome to JavaScript</h1>
+    <p>Open the browser console to see JavaScript output.</p>
+
+    <button onclick="changeText()">Change Title Text</button>
+
+    <div style="margin-top: 16px;">
+      <span>Button clicks: <span id="clickCount">0</span></span>
+      <button onclick="incrementCounter()">Click Me</button>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>

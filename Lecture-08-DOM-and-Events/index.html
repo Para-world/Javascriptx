@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lecture 08: DOM Manipulation and Events</title>
+  <style>
+    body { font-family: sans-serif; margin: 20px; }
+    #taskInput { padding: 4px; }
+    #addTaskBtn { margin-left: 4px; }
+    ul { margin-top: 12px; padding-left: 20px; }
+    li { margin-bottom: 4px; }
+    .highlight { color: #0056b3; }
+  </style>
+</head>
+<body>
+  <h1 id="pageTitle">Lecture 08: DOM Manipulation and Events</h1>
+  <p>Use the buttons and input below, then open the browser console to see logs.</p>
+
+  <button id="highlightBtn">Toggle Title Highlight</button>
+
+  <h2>Mini Project: Simple Task List</h2>
+  <input id="taskInput" type="text" placeholder="Enter a task">
+  <button id="addTaskBtn">Add Task</button>
+
+  <ul id="taskList"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>

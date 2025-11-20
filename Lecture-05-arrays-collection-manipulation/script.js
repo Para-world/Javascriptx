@@ -84,3 +84,28 @@ console.log(doubled);
 let sum = numbers.reduce((acc, curr) => acc + curr, 0);
 console.log(sum); 
 
+
+let cartItems = [
+  { name: "Book", price: 299 },
+  { name: "Pen", price: 49 },
+  { name: "Notebook", price: 149 }
+];
+
+cartItems.push({ name: "Bag", price: 799 });
+
+let totalPrice = cartItems.reduce(function(total, item) {
+  return total + item.price;
+}, 0);
+
+console.log("Cart items:", cartItems);
+console.log("Total price:", totalPrice);
+
+// --- Advanced Notes (for professionals) ---
+// - Prefer map/filter/reduce for transforming collections, but be mindful of performance on very large arrays.
+// - Avoid mutating arrays in-place when building reusable utilities; instead, return new arrays (use spread [...arr]).
+// - Understand that many array operations are O(n); be conscious of nested loops that can lead to O(n^2).
+
+// --- Exercises ---
+// 1. Implement a function getExpensiveItems(cart, minPrice) that returns a new array filtered by price.
+// 2. Write a function groupBy(items, key) that groups an array of objects by a given property name.
+// 3. Flatten a 2D array [[1,2],[3,4]] into [1,2,3,4] using reduce without using flat().

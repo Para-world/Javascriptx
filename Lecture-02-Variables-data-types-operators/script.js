@@ -95,6 +95,48 @@ console.log("Value of PI:", PI);
 var namem = Date();
 var namel = window.location;
 
+let calcNum1 = 20;
+let calcNum2 = 8;
+let calcOperator = "*";
+let calcResult;
 
+if (calcOperator === "+") {
+  calcResult = calcNum1 + calcNum2;
+} else if (calcOperator === "-") {
+  calcResult = calcNum1 - calcNum2;
+} else if (calcOperator === "*") {
+  calcResult = calcNum1 * calcNum2;
+} else if (calcOperator === "/") {
+  calcResult = calcNum1 / calcNum2;
+} else if (calcOperator === "%") {
+  calcResult = calcNum1 % calcNum2;
+} else {
+  console.log("Invalid operator for calculator");
+}
 
+console.log(`Calculator: ${calcNum1} ${calcOperator} ${calcNum2} = ${calcResult}`);
 
+let userAgeValue = 21;
+let ageCategory;
+
+if (userAgeValue < 13) {
+  ageCategory = "Child";
+} else if (userAgeValue < 20) {
+  ageCategory = "Teen";
+} else if (userAgeValue < 60) {
+  ageCategory = "Adult";
+} else {
+  ageCategory = "Senior";
+}
+
+console.log(`Age: ${userAgeValue}, Category: ${ageCategory}`);
+
+// --- Advanced Notes (for professionals) ---
+// - Understand implicit type coercion:  "5" - 1 === 4 but "5" + 1 === "51".
+// - Always prefer === over == to avoid surprising coercion, except in very specific controlled cases.
+// - Be aware of special values like NaN and how Number(), parseInt() and Boolean() convert different inputs.
+
+// --- Exercises ---
+// 1. Write a function logEquality(a, b) that logs results of both a == b and a === b for several tricky cases.
+// 2. Implement a safeParseInt(value, defaultValue) that returns defaultValue when parseInt fails (NaN).
+// 3. Create a function classifyValue(v) that logs its typeof, truthiness, and whether it is NaN.

@@ -97,4 +97,38 @@ for (let i = 1; i <= 5; i++) {
   console.log(i);
 }
 
+let secretNumber = Math.floor(Math.random() * 20) + 1;
+let maxAttempts = 5;
+let attempt = 1;
 
+while (attempt <= maxAttempts) {
+  let guessInput = prompt("Guess a number between 1 and 20. Attempt " + attempt + " of " + maxAttempts + ":");
+  let guess = parseInt(guessInput, 10);
+
+  if (isNaN(guess)) {
+    console.log("Please enter a valid number.");
+  } else if (guess === secretNumber) {
+    console.log("Correct! You guessed the number in", attempt, "attempt(s).");
+    break;
+  } else if (guess < secretNumber) {
+    console.log("Too low.");
+  } else if (guess > secretNumber) {
+    console.log("Too high.");
+  }
+
+  attempt++;
+}
+
+if (attempt > maxAttempts) {
+  console.log("Out of attempts. The secret number was", secretNumber);
+}
+
+// --- Advanced Notes (for professionals) ---
+// - Prefer early returns ("guard clauses") instead of deeply nested if/else blocks to keep code flat and readable.
+// - Think about input validation as part of control flow: never trust prompt/user input without checking it.
+// - Loops combined with break/continue can often be replaced with array methods (some, every, find) for clarity.
+
+// --- Exercises ---
+// 1. Refactor the grade calculation into a function getGrade(marks) and write tests for boundary values.
+// 2. Rewrite the guessing game using a for loop instead of while, keeping the same behavior.
+// 3. Implement a small menu system using switch that handles at least 4 commands (e.g., add, list, update, exit).
