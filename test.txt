@@ -1,4 +1,0 @@
-//create a function in javscript which shows the area of a circle;
-//write a function in javascript which shows the volume of cube;
-//write a function which find outs which was the leap year or not?
-//write a function which find outs the  factorial of n numbers;
