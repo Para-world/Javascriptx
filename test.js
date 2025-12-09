@@ -1,48 +1,26 @@
-//create a function in javscript which shows the area of a circle;
-//write a function in javascript which shows the volume of cube;
-//write a function which find outs which was the leap year or not?
-//write a function which find outs the  factorial of n numbers;
+//loops
+//for loop
 
-let a = 56;
-
-if (a >= 50){
-    console.log("greater than 50");
-} else {
-    console.log("less than 50");
+for (let i = 0; i < 10; i++) {
+    console.log(i);
 }
 
 
-let b = 45;
-let c = 60;
+//while loop 
 
-if (b > c){
-    console.log("b is greater than c");
-} else if (b < c){
-    console.log("b is less than c");
-} else {
-    console.log("b is equal to c");
-}
-
-let age = 78;
-
-if (age >= 18){
-    console.log("you are able to vote")
-} else {
-    console.log("you are not able to vote")
+let i = 0;
+while (i < 10) {
+    console.log(i);
+    i++;
 }
 
 
+//do while loop
 
-//student grade card
+do {
+    console.log(i);
+    i++;
+} while (i < 10);
 
-let marks = 86;
+//examples:
 
-// if (marks >= 90) and (marks <= 100){
-//     console.log("Grade A")
-// } else if (marks >= 80){
-//     console.log("Grade B")
-// } else if (marks >= 70){
-//     console.log("Grade C")
-// } else if (marks >= 60){
-//     console.log("Grade D")
-// }
